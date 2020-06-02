@@ -20,7 +20,7 @@ class HplusViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        AF.request("").responseString(completionHandler: {
+        AF.request("https://hplus.azurewebsites.net/api/SportApi").responseString(completionHandler: {
         response
         in
         
