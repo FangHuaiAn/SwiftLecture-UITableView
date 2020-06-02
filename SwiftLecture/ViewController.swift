@@ -16,8 +16,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
@@ -27,6 +25,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let name = self.fetures[ indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: FeatureViewCell.identifier ) as! FeatureViewCell
@@ -42,17 +41,16 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         
         switch indexPath.row {
         case 0:
-            self.performSegue(withIdentifier: "moveToURL", sender: self)
+            self.performSegue(withIdentifier: "moveToHplus", sender: self)
             break
         case 1:
-            self.performSegue(withIdentifier: "moveToHTML", sender: self)
+            self.performSegue(withIdentifier: "moveToCCCC", sender: self)
             break
         case 2:
-            self.performSegue(withIdentifier: "moveToInteraction", sender: self)
+            self.performSegue(withIdentifier: "moveToAGU", sender: self)
             break
         case 3:
-                
-            
+            self.performSegue(withIdentifier: "moveToNash", sender: self)
             break
         default:
             
