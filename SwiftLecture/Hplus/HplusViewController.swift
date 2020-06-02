@@ -30,7 +30,11 @@ class HplusViewController: UIViewController {
             // 注意 guard 的使用方法。
             guard 200 == response.response!.statusCode else {
                 
-                
+                if let dataFromString = value.data(using: .utf8, allowLossyConversion: false) {
+                    let json = try! JSON(data: dataFromString)
+                    
+                    print(json)
+                }
                 
                 return
             }
@@ -39,7 +43,7 @@ class HplusViewController: UIViewController {
             break;
         case let .failure(error) :
             
-            
+            print(error.localizedDescription)
             break;
         }
         
