@@ -8,14 +8,42 @@
 
 import UIKit
 
+import Alamofire
+import SwiftyJSON
+
 class HplusViewController: UIViewController {
 
-    let fetures : [String] = ["Profile", "Support", "Todo"]
+    let fetures : [String] = ["Profile", "Sport", "Todo"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        AF.request("").responseString(completionHandler: {
+        response
+        in
+        
+        switch( response.result ){
+        case let .success(value) :
+        
+            // 注意 guard 的使用方法。
+            guard 200 == response.response!.statusCode else {
+                
+                
+                
+                return
+            }
+            
+            
+            break;
+        case let .failure(error) :
+            
+            
+            break;
+        }
+        
+        })
     }
 }
 
@@ -45,6 +73,9 @@ extension HplusViewController : UITableViewDelegate, UITableViewDataSource {
             
             break
         case 1:
+            
+            
+            
             
             break
         case 2:

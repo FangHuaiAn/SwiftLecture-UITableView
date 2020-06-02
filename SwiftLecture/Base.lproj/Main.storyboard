@@ -75,7 +75,7 @@
         <!--AGU-->
         <scene sceneID="Jim-Sj-yei">
             <objects>
-                <viewController id="z7F-nZ-uHU" sceneMemberID="viewController">
+                <viewController id="z7F-nZ-uHU" customClass="AGUViewController" customModule="SwiftLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8jY-B9-Rt6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="z7F-nZ-uHU" id="nXi-PK-zzO"/>
+                                    <outlet property="delegate" destination="z7F-nZ-uHU" id="lNk-0e-6vt"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -130,7 +134,7 @@
         <!--Nash-->
         <scene sceneID="n0F-f6-WU0">
             <objects>
-                <viewController id="W3z-14-MLz" sceneMemberID="viewController">
+                <viewController id="W3z-14-MLz" customClass="NashViewController" customModule="SwiftLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbf-zv-qte">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,6 +169,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="W3z-14-MLz" id="5Mb-t7-qqg"/>
+                                    <outlet property="delegate" destination="W3z-14-MLz" id="Qo9-mU-Ngj"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -185,7 +193,7 @@
         <!--Hplus-->
         <scene sceneID="Dvg-4t-ALQ">
             <objects>
-                <viewController id="jRX-OR-ZgH" sceneMemberID="viewController">
+                <viewController id="jRX-OR-ZgH" customClass="HplusViewController" customModule="SwiftLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K0g-Sd-vGa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,6 +228,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jRX-OR-ZgH" id="2ek-rl-b5W"/>
+                                    <outlet property="delegate" destination="jRX-OR-ZgH" id="kcL-6t-48p"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -240,7 +252,7 @@
         <!--CCCC-->
         <scene sceneID="L7Z-fl-Gji">
             <objects>
-                <viewController id="eyI-h2-6fW" sceneMemberID="viewController">
+                <viewController id="eyI-h2-6fW" customClass="CCCCViewController" customModule="SwiftLecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7qM-Ub-PR5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -276,6 +288,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eyI-h2-6fW" id="OOc-W0-ZWh"/>
+                                    <outlet property="delegate" destination="eyI-h2-6fW" id="rVF-10-bxI"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
